@@ -15,13 +15,15 @@
     <div class="flex flex-row items-center justify-between">
 
         <!-- Logo -->
-        <h1 class="text-1xl font-bold">
-            Curious Eats
-        </h1>
+        <a href="index.html">
+            <h1 class="text-2xl font-bold text-[#274C77] drop-shadow-2xl">
+                Curious Eats
+            </h1>
+        </a>
 
         <!-- Search Bar -->
         <div
-            class="flex flex-row items-center gap-4 border-2 border-gray-400 rounded-lg px-4 py-2 bg-white justify-center">
+            class="flex flex-row items-center gap-4 border-2 border-gray-400 rounded-lg px-4 py-2 bg-white justify-center drop-shadow-2xl">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -45,44 +47,146 @@
                     Springfield, VA
                 </p>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-            </svg>
+            <a href="restaurantDetails.html">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                </svg>
+            </a>
         </div>
 
     </div>
 
-   
+    <!-- Add sections here -->
+
+    <!-- Banner Image Section -->
+    <div class="mt-12">
+        <img src="food1.jpg" alt="Banner Image" class="w-full h-80 object-cover rounded-lg drop-shadow-2xl">
+    </div>
+
+    <!-- Details Section -->
+    <div class="flex flex-row justify-between">
+        <div class="mt-12">
+            <p class="text-sm italic text-gray-600">
+                Italian - $$$ - Alexandria, VA
+            </p>
+            <h2 class="text-2xl font-bold text-[#274C77]">The Farmhouse Tuscan</h2>
+            <p class="text-sm font-medium italic text-[#274C77]">
+                Communiity Rating: Restaurant of the week - 4.5/5 stars (based on 200+ reviews)
+            </p>
+
+            <!-- Buttons -->
+            <div class="flex flex-row gap-4 mt-4 mb-8">
+                <button class="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-[#1a3a5f]">
+                    Upvote
+                </button>
+                <button class="bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-[#1a3a5f]">
+                    Downvote
+                </button>
+                <button class="bg-yellow-500 text-white py-2 px-4 rounded-lg hover:bg-[#1a3a5f]">
+                    Save
+                </button>
+                <button class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-[#1a3a5f]">
+                    Share
+                </button>
+            </div>
+        </div>
+        <button>
+            <a href="index.html" class="bg-[#274C77] text-white py-2 px-4 rounded-lg hover:bg-[#1a3a5f]">
+                Back to Home
+            </a>
+        </button>
+    </div>
+
+    <!-- Overview Section -->
+    <div>
+        <h2 class=" text-[#274C77] text-2xl font-bold">Overview</h2>
+        <div class="flex flex-row gap-12 bg-white rounded-lg shadow-md p-6 mt-4 drop-shadow-2xl w-1/2 justify-around">
+            <!-- left column -->
+            <div class="flex flex-col">
+                <!-- top left -->
+                <div class="mt-4">
+                    <h3 class="text-[#274C77] text-md font-bold">Happy Hour Active Now</h3>
+                    <p class="text-gray-600 italic">Monday - Friday, 4:00 PM - 7:00 PM</p>
+                    <p class="text-gray-600 italic">Half-price appetizers and $5 cocktails!</p>
+                </div>
+
+                <!-- bottom left -->
+                <div class="mt-6">
+                    <h3 class="text-[#274C77] text-md font-bold">Address</h3>
+                    <p class="text-gray-600 italic">123 Main Street, Alexandria, VA 22314</p>
+                </div>
+                <div class="mt-6">
+                    <h3 class="text-[#274C77] text-md font-bold">Hours</h3>
+                    <p class="text-gray-600 italic">Sunday - Saturday: 10:00 AM - 10:00 PM</p>
+                </div>
+
+
+            </div>
+
+            <!-- right column -->
+            <div class="flex flex-col">
+                <!-- top right -->
+                <div class="mt-6">
+                    <h3 class="text-[#274C77] text-md font-bold">Rating</h3>
+                    <p class="text-gray-600 italic">4.5/5 stars (based on 200+ reviews) </p>
+                </div>
+
+
+                <!-- bottom right -->
+                <div class="mt-6">
+                    <h3 class="text-[#274C77] text-md font-bold">Brunch Buffet</h3>
+                    <p class="text-gray-600 italic">Sunday: 10:00 AM - 2:00 PM</p>
+                </div>
+                <div class="mt-6">
+                    <h3 class="text-[#274C77] text-md font-bold">Price Range</h3>
+                    <p class="text-gray-600 italic">Moderate - $10-$25 per person</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Testimonials Section -->
     <div class="mt-12 flex flex-col gap-6 items-center justify-center">
         <h2 class=" text-[#274C77] text-2xl font-bold mb-4">What Our Users Say</h2>
 
-        <div class="flex flex-row gap-6 items-center flex-wrap justify-center">
+        <div class="flex flex-row gap-6 items-center flex-wrap justify-center drop-shadow-2xl">
             <div class="bg-white rounded-lg shadow-md p-4 gap-4 flex flex-row w-auto justify-start items-center">
                 <img src="t1.jpg" alt="" class="w-16 h-16 object-cover rounded-full">
                 <p class="text-gray-600 font-light text-sm italic">"I’ve tried over 10 new restaurants since using
                     Curious Eats.
-                    I honestly can’t get enough!" - Jeremy</p>
+                    I honestly can’t get enough!" - Bobby</p>
             </div>
 
-            <div class="flex flex-row gap-6 items-center flex-wrap justify-center">
+            <div class="flex flex-row gap-6 items-center flex-wrap justify-center drop-shadow-2xl">
                 <div class="bg-white rounded-lg shadow-md p-4 gap-4 flex flex-row w-auto justify-start items-center">
                     <img src="t2.jpg" alt="" class="w-16 h-16 object-cover rounded-full">
                     <p class="text-gray-600 font-light text-sm italic">"I told my friends about Curious Eats and now
                         they won’t
                         stop talking about it! It definitely makes it a lot easier for us to decide where to eat." -
-                        Ashley</p>
+                        Mark</p>
+                </div>
+
+
+
+            </div>
+
+            <div class="flex flex-row gap-6 items-center flex-wrap justify-center drop-shadow-2xl">
+                <div class="bg-white rounded-lg shadow-md p-4 gap-4 flex flex-row w-auto justify-start items-center">
+                    <img src="t1.jpg" alt="" class="w-16 h-16 object-cover rounded-full">
+                    <p class="text-gray-600 font-light text-sm italic">"I told my friends about Curious Eats and now
+                        they won’t
+                        stop talking about it! It definitely makes it a lot easier for us to decide where to eat." -
+                        Jacob</p>
                 </div>
 
 
 
             </div>
         </div>
-    </div>
-
+        
             <!-- <nav>
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
