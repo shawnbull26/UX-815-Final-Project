@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="screen.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-200 p-8">
+
+    <!-- Header Section -->
+    <div class="flex flex-row items-center justify-between">
+
+        <!-- Logo -->
+        <h1 class="text-1xl font-bold">
+            Curious Eats
+        </h1>
+
+        <!-- Search Bar -->
+        <div
+            class="flex flex-row items-center gap-4 border-2 border-gray-400 rounded-lg px-4 py-2 bg-white justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>
+            <p class="text-gray-500 font-light italic">
+                Search Restaurants Nearby...
+            </p>
+        </div>
+
+        <!-- Location Icon and Text -->
+        <div class="flex flex-row items-center gap-4">
+            <div flex class="flex flex-row items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                </svg>
+                <p class="text-gray-500 font-light italic underline">
+                    Springfield, VA
+                </p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            </svg>
+        </div>
+
+    </div>
+
+   
+
+    <!-- Testimonials Section -->
+    <div class="mt-12 flex flex-col gap-6 items-center justify-center">
+        <h2 class=" text-[#274C77] text-2xl font-bold mb-4">What Our Users Say</h2>
+
+        <div class="flex flex-row gap-6 items-center flex-wrap justify-center">
+            <div class="bg-white rounded-lg shadow-md p-4 gap-4 flex flex-row w-auto justify-start items-center">
+                <img src="t1.jpg" alt="" class="w-16 h-16 object-cover rounded-full">
+                <p class="text-gray-600 font-light text-sm italic">"I’ve tried over 10 new restaurants since using
+                    Curious Eats.
+                    I honestly can’t get enough!" - Jeremy</p>
+            </div>
+
+            <div class="flex flex-row gap-6 items-center flex-wrap justify-center">
+                <div class="bg-white rounded-lg shadow-md p-4 gap-4 flex flex-row w-auto justify-start items-center">
+                    <img src="t2.jpg" alt="" class="w-16 h-16 object-cover rounded-full">
+                    <p class="text-gray-600 font-light text-sm italic">"I told my friends about Curious Eats and now
+                        they won’t
+                        stop talking about it! It definitely makes it a lot easier for us to decide where to eat." -
+                        Ashley</p>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+            <!-- <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav> -->
+            <script src="index.js"></script>
+</body>
+
+</html>

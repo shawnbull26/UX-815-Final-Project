@@ -20,13 +20,13 @@
     </h1>
 
     <!-- Search Bar -->
-    <div class="flex flex-row items-center gap-4 border-2 border-gray-400 rounded-lg px-4 py-2 bg-white">
+    <div class="flex flex-row items-center gap-4 border-2 border-gray-400 rounded-lg px-4 py-2 bg-white justify-center">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
         class="size-6">
         <path stroke-linecap="round" stroke-linejoin="round"
           d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
       </svg>
-      <p class="text-gray-500 font-light">
+      <p class="text-gray-500 font-light italic">
         Search Restaurants Nearby...
       </p>
     </div>
@@ -40,7 +40,9 @@
           <path stroke-linecap="round" stroke-linejoin="round"
             d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
         </svg>
-        <p>Springfield, VA</p>
+        <p class="text-gray-500 font-light italic underline">
+          Springfield, VA
+        </p>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
         class="size-6">
@@ -55,35 +57,71 @@
   <div class=" mt-8 flex flex-col justify-center items-center gap-4">
     <h2 class="text-[#274C77] text-3xl font-bold">Discover and Rate Restaurants Near You</h2>
     <p class="text-gray-600 mt-2">Help locals find hidden gems</p>
-    <a class="inline-block rounded-sm bg-[#6096BA] px-8 py-3 text-sm font-medium text-white transition hover:scale-110 hover:rotate-2"
+    <a href="#cards"
+      class="inline-block rounded-md bg-[#6096BA] px-8 py-3 text-sm font-medium text-white transition hover:scale-110 hover:rotate-2"
       href="#">
       Browse Restaurants
     </a>
   </div>
 
   <!-- Restaurant Section -->
-  <div class="mt-12 flex flex-col gap-6 items-center justify-center">
-    <h2 class="text-[#274C77] text-2xl font-bold mb-4">Featured Restaurants</h2>
-    <div class="flex flex-row gap-6 items-center justify-center">
+    <div class="mt-12 flex flex-col gap-6 items-center justify-center">
+      <h2 class="text-[#274C77] text-2xl font-bold mb-4">Featured Restaurants</h2>
+      <div class="flex flex-row gap-6 items-center justify-center">
 
-      <!-- Restaurant Card 1 -->
-      <div class="bg-white rounded-lg shadow-md p-4 gap-4 flex flex-col w-auto">
-        <img src="Featured Restaurant Image.png" alt="Restaurant 1" class="w-full h-48 object-cover rounded-md">
-        <h3 class="text-xl font-bold mt-2">The Farmhouse Tuscan</h3>
-        <p class="text-gray-600 font-medium text-sm italic">Italian cuisine - $$$</p>
-        <p class="text-gray-600">This week’s community favorite is a local Italian restaurant located in Alexandria, VA.
-          Their specialty is a brunch buffet that is held every Sunday from 10am-3pm.</p>
-        <h4 class="font-bold">Recent Reviews</h4>
-        <p class="text-gray-600 font-light text-sm">"Loved the curry chicken!" - Dave</p>
-        <p class="text-gray-600 font-light text-sm">"Parking was easy and the view was amazing.” - Sarah</p>
-        <button class="mt-4 bg-[#6096BA] text-white py-2 px-4 rounded-md hover:bg-[#4a7c9c] transition">
-          View Details
-        </button>
+        <!-- Restaurant Card 1 -->
+        <div class="bg-white rounded-lg shadow-md p-4 gap-4 flex flex-col w-auto">
+          <img src="tuscan2.png" alt="Restaurant 1" class="w-auto h-auto object-cover rounded-md">
+          <h3 class="text-xl font-bold mt-2">The Farmhouse Tuscan</h3>
+          <p class="text-gray-600 font-medium text-sm italic">Italian cuisine - $$$</p>
+
+          <!-- Icon for stars -->
+          <div class="flex flex-row">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="gold" class="size-6">
+              <path fill-rule="evenodd"
+                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                clip-rule="evenodd" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="gold" class="size-6">
+              <path fill-rule="evenodd"
+                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                clip-rule="evenodd" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="gold" class="size-6">
+              <path fill-rule="evenodd"
+                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                clip-rule="evenodd" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="gold" class="size-6">
+              <path fill-rule="evenodd"
+                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                clip-rule="evenodd" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="gold" class="size-6">
+              <path fill-rule="evenodd"
+                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                clip-rule="evenodd" />
+            </svg>
+          </div>
+
+          <p class="text-gray-600">This week’s community favorite is a local Italian restaurant located in Alexandria,
+            VA.
+            Their specialty is a brunch buffet that is held every Sunday from 10am-3pm.</p>
+          <h4 class="font-bold">Recent Reviews</h4>
+          <p class="text-gray-600 font-light text-sm">"Loved the curry chicken!" - Dave</p>
+          <p class="text-gray-600 font-light text-sm">"Parking was easy and the view was amazing.” - Sarah</p>
+          <a href="restaurantDetails.html"
+            class="mt-4 bg-[#6096BA] text-white py-2 px-4 rounded-md hover:bg-[#4a7c9c] transition items-center justify-center text-center">
+            View Details
+          </a>
+        </div>
+        <!-- Add more restaurant cards as needed -->
       </div>
-      <!-- Add more restaurant cards as needed -->
     </div>
-  </div>
-  </div>
 
   <!-- Filter Section -->
   <div class="mt-12 flex flex-col gap-6 items-center justify-center">
@@ -117,18 +155,19 @@
     </div>
   </div>
 
-  <!-- Restaurant Cards Section -->
+  <section id="cards">
+    <!-- Restaurant Cards Section -->
   <div class="mt-12 flex flex-col gap-6 items-center justify-center">
     <h2 class="text-[#274C77] text-2xl font-bold mb-4">Restaurants Near You</h2>
     <div class="flex flex-row gap-6 items-center justify-center flex-wrap">
 
       <!-- Restaurant Card 1 -->
       <div class="bg-white rounded-lg shadow-md p-4 gap-4 flex flex-col w-auto">
-        <img src="Restaurant Image.png" alt="Restaurant 1" class="w-full h-48 object-cover rounded-md">
+        <img src="ada.jpg" alt="Restaurant 1" class="w-full h-48 object-cover rounded-md">
         <h3 class="text-xl font-bold mt-2">Ada's on the River</h3>
         <p class="text-gray-600 font-medium text-sm italic">American cuisine - $$$</p>
         <p class="text-gray-600 font-medium text-sm italic">Alexandria, VA</p>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="red"
           class="size-6">
           <path stroke-linecap="round" stroke-linejoin="round"
             d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
@@ -138,11 +177,11 @@
 
       <!-- Restaurant Card 2 -->
       <div class="bg-white rounded-lg shadow-md p-4 gap-4 flex flex-col w-auto">
-        <img src="Restaurant Image.png" alt="Restaurant 1" class="w-full h-48 object-cover rounded-md">
+        <img src="newCoastal.jpg" alt="Restaurant 1" class="w-full h-48 object-cover rounded-md">
         <h3 class="text-xl font-bold mt-2">Coastal Flats</h3>
         <p class="text-gray-600 font-medium text-sm italic">Seafood cuisine - $$</p>
         <p class="text-gray-600 font-medium text-sm italic">Fairfax, VA</p>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="red"
           class="size-6">
           <path stroke-linecap="round" stroke-linejoin="round"
             d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
@@ -152,11 +191,11 @@
 
       <!-- Restaurant Card 3 -->
       <div class="bg-white rounded-lg shadow-md p-4 gap-4 flex flex-col w-auto">
-        <img src="Restaurant Image.png" alt="Restaurant 1" class="w-full h-48 object-cover rounded-md">
+        <img src="josephine.webp" alt="Restaurant 1" class="w-full h-48 object-cover rounded-md">
         <h3 class="text-xl font-bold mt-2">Josephine</h3>
         <p class="text-gray-600 font-medium text-sm italic">French cuisine - $$$</p>
         <p class="text-gray-600 font-medium text-sm italic">Alexandria, VA</p>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="red"
           class="size-6">
           <path stroke-linecap="round" stroke-linejoin="round"
             d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
@@ -166,11 +205,11 @@
 
       <!-- Restaurant Card 4 -->
       <div class="bg-white rounded-lg shadow-md p-4 gap-4 flex flex-col w-auto">
-        <img src="Restaurant Image.png" alt="Restaurant 1" class="w-full h-48 object-cover rounded-md">
+        <img src="garden.jpg" alt="Restaurant 1" class="w-full h-48 object-cover rounded-md">
         <h3 class="text-xl font-bold mt-2">The Secret Garden</h3>
         <p class="text-gray-600 font-medium text-sm italic">American cuisine - $$$</p>
         <p class="text-gray-600 font-medium text-sm italic">Alexandria, VA</p>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="red"
           class="size-6">
           <path stroke-linecap="round" stroke-linejoin="round"
             d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
@@ -178,8 +217,40 @@
 
       </div>
 
+    </div>
+  </div>
+  </section>
 
-      <!-- Add more restaurant cards as needed -->
+  <!-- CTA Section -->
+  <div class="mt-12 flex flex-col gap-6 items-center justify-center">
+    <h2 class=" text-[#274C77] text-2xl font-bold mb-4">How It Helps The Community</h2>
+    <p class="text-gray-600 text-center">
+      By giving daily ratings and reviews to local restaurants, people are able to find places they may not have heard
+      of before!
+    </p>
+  </div>
+
+  <!-- Testimonials Section -->
+  <div class="mt-12 flex flex-col gap-6 items-center justify-center">
+    <h2 class=" text-[#274C77] text-2xl font-bold mb-4">What Our Users Say</h2>
+
+    <div class="flex flex-row gap-6 items-center flex-wrap justify-center">
+      <div class="bg-white rounded-lg shadow-md p-4 gap-4 flex flex-row w-auto justify-start items-center">
+        <img src="t1.jpg" alt="" class="w-16 h-16 object-cover rounded-full">
+        <p class="text-gray-600 font-light text-sm italic">"I’ve tried over 10 new restaurants since using Curious Eats.
+          I honestly can’t get enough!" - Jeremy</p>
+      </div>
+
+      <div class="flex flex-row gap-6 items-center flex-wrap justify-center">
+        <div class="bg-white rounded-lg shadow-md p-4 gap-4 flex flex-row w-auto justify-start items-center">
+          <img src="t2.jpg" alt="" class="w-16 h-16 object-cover rounded-full">
+          <p class="text-gray-600 font-light text-sm italic">"I told my friends about Curious Eats and now they won’t
+            stop talking about it! It definitely makes it a lot easier for us to decide where to eat." - Ashley</p>
+        </div>
+
+
+
+      </div>
 
       <!-- <nav>
       <ul>
