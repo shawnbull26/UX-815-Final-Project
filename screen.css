@@ -1,4 +1,12 @@
 /* Add screen styles below */
+@import "tailwindcss";
+
 a.active {
     font-weight: bold;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #E7ECEF;
 }
